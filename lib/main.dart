@@ -7,6 +7,7 @@ import 'package:game/hit-game.dart';
 import 'package:flame/flame.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   Util flameUtil = Util();
   await flameUtil.fullScreen();
   await flameUtil.setOrientation(DeviceOrientation.portraitUp);
